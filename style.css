@@ -1,0 +1,199 @@
+/* General Style CSS */
+html, body{
+  height: 100%;
+}
+body{
+  /*background-image: url(img/pozadina.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;*/
+  background-color: #FEE6F4;
+}
+#wrap{
+  min-height: 100%;
+}
+#main{
+  overflow: auto;
+  padding-bottom: 170px;
+  padding-top: 88px;
+}
+
+/* Style for NavBar */
+nav{
+  position: relative;
+  font-size: x-large;
+  clear: both;
+}
+
+/* Custom Shadow Style */
+.shadow{
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.7);
+}
+
+/* General Card Style */
+.card{
+  min-height: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Style for O nama page */
+#onama{
+  display: block;
+  margin-top: 1rem;
+}
+#onama-dugmici a{
+  position: relative;
+  display: block;
+  margin-top: 1rem;
+  margin: 10px;
+  width: 18%;
+  overflow: hidden;
+}
+/* Style for product pages */
+.proizvodi_chk{
+  display: none;
+}
+.proizvodi_lbl{
+  display: inline-block;
+  pointer-events: none;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+}
+.proizvodi_chk:checked + label{
+  border: 5px solid #DC3545;
+  border-radius: 100%;
+}
+.razmak{
+  margin-bottom: 2rem;
+}
+#boja{
+  margin-bottom: 2rem;
+  width: 50%;
+}
+
+/* Style for contact page */
+.google-maps{
+  position: relative;
+  padding-bottom: 33%;
+  height: 0;
+  overflow: hidden;
+  margin-top: -20px;
+}
+.google-maps iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.contactinfo{
+  border: 1px solid rgba(0,0,0,0.15);
+  margin-top: 1em;
+  padding: 1em;
+  background-color: white;
+  font-size: larger;
+  overflow: hidden;
+}
+
+/* Style for gallery page */
+.carousel-inner .carousel-item .carousel-img{
+  height: 80vh;
+  object-fit: contain;
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23DC3545' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23DC3545' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.carousel .carousel-indicators li {
+  background-color: #F6CCD0;
+}
+.carousel-caption{
+  color: #F6CCD0;
+
+  border-radius: 20px;
+  background-color: rgba(100,50,50,0.9);
+}
+.carousel .carousel-indicators .active {
+  background-color: rgb(170, 38, 49);
+}
+
+
+/* Style for FAQ page */
+#pitanja{
+  margin-top: 2rem;
+}
+.accordion{
+  margin-top: 2rem;
+}
+.accordion, .accordion button{
+  font-size: large;
+}
+.accordion button:focus, .accordion button:hover{
+  text-decoration: none;
+}
+.accordion button, .accordion div a{
+  color: #DC3545;
+  font-weight: bold;
+
+}
+.accordion button:hover, .accordion div a:hover{
+  color: rgb(150, 38, 49);
+}
+
+/* Style for Site Map page */
+.mapa{
+  font-size: x-large;
+  line-height: 60px;
+}
+.mapa a{
+  color: #DC3545;
+  text-decoration: none;
+}
+
+/* Style for Cenovnik page */
+.kategorija{
+  margin-top: 2rem;
+}
+/* Style for footer of the page */
+footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #DC3545;
+  margin-top: -150px;
+  height: 150px;
+  clear: both;
+}
+footer a{
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0.2rem;
+  font-size: large;
+}
+footer a:hover{
+  color: #F6CCD0;
+  text-decoration: none;
+}
+footer p{
+  letter-spacing: 0.1rem;
+  font-size: small;
+  margin: 0 !important;
+}
+
+/* Responsive email link on Contact Page */
+@media screen and (max-width: 767px) {
+  #cont-email{
+    word-break: break-all;
+  }
+}
